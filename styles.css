@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+}
+
+.main-body{
+    background-image: url(https://web.gcompostela.org/wp-content/uploads/2022/03/IMG_TSU-ivane-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-body h1{
+    color: white;
+    order: 2;
+}
+
+h2{
+    color: orangered;
+    order: 3;
+}
+
+.main-body p{
+    color: blueviolet;
+    font-weight: bold;
+    border-top: 5px solid blueviolet;
+    order: 1;
+    margin: 0;
+}
+#tsu-link{
+    text-decoration: none;
+}
+.main-body p, h2, h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+form{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#register-btn, input{
+    border: none;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 10px;
+    border-radius: 2px;
+}
+input{
+    border: 1px solid black;
+    margin: 5px;
+}
+#email{
+    text-transform: lowercase;
+}
+#name{
+    text-transform: capitalize;
+}
+
+input:focus{
+    background-color: lightgrey;
+}
+
+#register-btn{
+    margin-top: 5px;
+    width:220px;
+    background: linear-gradient(to right, blue 0%, skyblue 100%);
+    color: white;
+    font-weight: bold;
+}
+#paragraph{
+    flex-wrap: break-word;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#sign-up{
+    text-transform: uppercase;
+    color: orange;
+}
+.registration-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .main-body {
+        width: 100%; /* Full width on smaller screens */
+        height: 50%;
+    }
+
+    .registration-form {
+        height: 50%;
+        width: 100%; /* Full width for form */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #register-btn, input {
+        width: 220px;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+    #paragraph {
+        margin-left: 10px; /* Adjust margins for better spacing */
+        margin-right: 10px;
+    }
+}
